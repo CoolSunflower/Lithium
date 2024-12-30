@@ -1,6 +1,9 @@
 # Minimum required version of CMake
 cmake_minimum_required(VERSION 3.10)
 
+# For clangd
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Project name
 project(LithiumRunner)
 
