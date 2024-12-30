@@ -14,6 +14,9 @@ add_executable(main src/main.c)
 # Set the output directory for the executable
 set_target_properties(main PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
+# Add compiler warning flags
+target_compile_options(main PRIVATE -Wall -Wextra)
+
 # Custom target for "lithium" execution
 add_custom_target(
     lithium
